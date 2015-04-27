@@ -1,0 +1,10 @@
+<template name="thread">
+	<h3>{{thisThread.title}}</h3>
+	<h5>{{thisThread.username}}:</h5>
+	<p>{{thisThread.body}}</p>
+	{{> ThreadComments}}
+	{{> CurErr}}
+	{{#if currentUser}}
+		{{> AddThreadComment}}
+	{{/if}}
+</template>

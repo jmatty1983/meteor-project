@@ -1,0 +1,57 @@
+/* CSS declarations go here */
+
+body {
+  padding-top: 60px;
+
+}
+
+textarea { 
+  resize: none; 
+}
+
+.forumTopic {
+	list-style: none;
+}
+
+#thread-table {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+#thread-table thead td{
+  font-weight: bold;
+}
+
+
+/* Page Transtion */
+.current{
+  opacity: 1.0;
+  position: relative;
+  transition: opacity 1s;
+}
+
+.transitioning .current{
+  opacity: 0.0;
+}
+
+.next{
+  position: absolute;
+  top: 60px;
+  opacity: 0.0;
+  transition: opacity 1s;
+}
+
+.transitioning .next{
+  opacity: 1.0;
+}
+
+body {
+  background: rgba(0, 0, 0, 0);
+  
+  transition: background 1s;
+}
+
+body.transitioning {
+
+  background: rgba(1, 0, 0, 0);
+}

@@ -1,0 +1,18 @@
+<template name="SignUpForm">
+	<div id="signUpForm" class="modal hide fade">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3>Sign Up</h3>
+		</div>
+		<div class="modal-body" align="center">
+			<input type="text" id="usernameSU" placeholder="Username" /><br />
+			<input type="password" id="passwordSU" placeholder="Password" /><br />
+			<input type="password" id="passconf" placeholder="Password" /><br />
+			<input type="text" id="email" placeholder="You@Email.com" /><br />
+			{{> CurErr}}
+		</div>
+		<div class="modal-footer">
+			<a href="#" id="btnSignUp" class="btn btn-primary">Sign Up</a>
+		</div>
+	</div>
+</template>

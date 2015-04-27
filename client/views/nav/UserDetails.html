@@ -1,0 +1,7 @@
+<template name="UserDetails">
+	{{#if currentUser}}
+		{{> UserLoggedIn}}
+	{{else}}
+		{{> UserLoggedOut}}
+	{{/if}}
+</template>

@@ -1,0 +1,13 @@
+<template name="forum">
+	<h3>Forums</h3>
+	<ul class="forumTopic">
+		{{#each allTopics}}
+		<li class="span4">
+			<a href="{{forumLink}}/{{title}}">
+				<h4>{{title}}</h4>
+			</a> 
+			<span class="topicDesc">{{description}}</span>
+		</li>
+		{{/each}}
+	</ul>
+</template>

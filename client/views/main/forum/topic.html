@@ -1,0 +1,33 @@
+<template name="topic">
+	<h3>{{topicTitle}}</h3>
+
+	<div class="input-prepend">
+		<button class="btn" type="button" id="btn_newThead">New Thread</button>
+		<button class="btn" type="button">Search</button>
+		<input class="span2" type="text" placeholder="search string">
+	</div>
+
+	<ul class='forumTopic'>
+		<table class="table table-hover table-condensed" id="thread-table">
+			<thead>
+				<td class="span6">Thread Title</td>
+				<td class="span2">Created By</td>
+				<td class="span2">Last Post</td>
+				<td class="span1">Replies</td>
+				<td class="span1">Views</td>		
+			</thead>
+		{{#each allThreads}}
+			<tr>
+
+				<td class="span6">
+					<a class="threadLink" href="{{forumLink}}/{{topicTitle}}/{{_id}}">{{title}}</a>
+				</td>
+				<td class="span2">{{username}}</td>
+				<td class="span2">{{lastpost}}</td>
+				<td class="span1">{{replies}}</td>
+				<td class="span1">{{views}}</td>
+			</tr>
+		{{/each}}
+		</table>
+	</ul>
+</template>

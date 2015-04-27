@@ -1,0 +1,42 @@
+<template name="Navigation">
+	<div class="navbar navbar-fixed-top navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand navLink" href="{{newsLink}}">BATTLE BYTES</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active">
+							<a class="navLink" href="{{newsLink}}">News</a>
+						</li>
+						<li class="divider-vertical"></li>
+						<li>
+							<a class="navLink" href="#">Play</a>
+						</li>
+						<li class="divider-vertical"></li>
+						<li>
+							<a class="navLink" href="#">About</a>
+						</li>
+						<li class="divider-vertical"></li>
+						<li>
+							<a class="navLink" href="#">Contact</a>
+						</li>
+						<li class="divider-vertical"></li>
+						<li>
+							<a class="navLink" href="{{forumLink}}">Forum</a>
+						</li>
+					</ul>
+					<ul class="nav pull-right">
+						{{> UserDetails}}
+					</ul>
+
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+</template>
